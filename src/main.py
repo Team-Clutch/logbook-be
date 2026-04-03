@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from src.api.routers import health
+from src.api.routers import health, profile
 
 app = FastAPI(title="logbook-be")
 
@@ -14,4 +14,4 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-app.include_router(health.router)
+app.include_router(profile.router)
