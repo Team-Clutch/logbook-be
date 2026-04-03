@@ -1,0 +1,68 @@
+{
+  "post": {
+    "postId": "postTelegramSummarizerFinal",
+    "slug": "telegram-summarizer-bot",
+    "projectId": "projectTelegramSummarizer",
+    "type": "projectFinal",
+    "title": "Telegram Summarizer Bot",
+    "author": {
+      "username": "honggildong",
+      "displayName": "홍길동"
+    },
+    "meta": {
+      "viewCount": 412,
+      "reactionCount": 37,
+      "publishedAt": "2026-03-24T09:00:00Z",
+      "updatedAt": "2026-03-24T12:30:00Z"
+    },
+    "content": {
+      "summary": "텔레그램 채팅을 요약하고 핵심 맥락을 정리하는 자동화 봇 프로젝트",
+      "thumbnailImageUrl": "https://example.com/images/posts/telegram-summarizer-bot.png",
+      "bodyMarkdown": "## 문제 정의\n기존 구조는 알림 메시지의 컨텍스트를 잃기 쉬웠고, 장문의 대화는 재확인이 어려웠습니다.\n\n## 해결 방법\n수집, 요약, 저장 책임을 분리하고 배치와 실시간 처리 경계를 정리했습니다.\n\n## 트러블슈팅\n요약 지연 구간을 줄이기 위해 작업 큐와 캐시 계층을 분리했습니다.\n\n## 회고\n작은 자동화 도구라도 구조를 남기면 이후 운영 비용을 크게 줄일 수 있었습니다."
+    },
+    "project": {
+      "projectId": "projectTelegramSummarizer",
+      "slug": "telegram-summarizer-bot",
+      "status": "completed",
+      "teamSize": 1,
+      "period": {
+        "start": "2025-03",
+        "end": "2026-01"
+      },
+      "role": [
+        "Lead Architecture"
+      ],
+      "techStacks": [
+        "python",
+        "AWS(Lambda)",
+        "AWS(DynamoDB)",
+        "LLM(Google Gemini)"
+      ],
+      "resultSummary": [
+        {
+          "label": "API 응답 속도",
+          "before": "900ms",
+          "after": "150ms",
+          "description": "일일 조회 경로를 정리해 평균 응답 지연을 대폭 감소시킴."
+        },
+        {
+          "label": "안정 처리량",
+          "value": "10K+",
+          "description": "동시 연결 환경에서도 더 안정적인 fan-out 구조를 확보했음."
+        }
+      ],
+      "links": [
+        {
+          "type": "repository",
+          "label": "GitHub",
+          "url": "https://github.com/honggildong/telegram-summarizer-bot"
+        },
+        {
+          "type": "liveDemo",
+          "label": "Live Demo",
+          "url": "https://telegram-summarizer-bot.vercel.app"
+        }
+      ]
+    }
+  }
+}

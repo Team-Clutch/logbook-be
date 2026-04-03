@@ -1,0 +1,66 @@
+{
+  "request": {
+    "tab": "projects",
+    "searchQuery": "",
+    "sort": "publishedAtDesc",
+    "filters": {
+      "techStacks": [],
+      "status": "completed"
+    },
+    "cursor": null,
+    "limit": 12
+  },
+  "response": {
+    "posts": [
+      {
+        "postId": "postTelegramSummarizerFinal",
+        "slug": "telegram-summarizer-bot",
+        "projectId": "projectTelegramSummarizer",
+        "type": "projectFinal",
+        "title": "Telegram Summarizer Bot",
+        "summary": "텔레그램 채팅을 요약하고 핵심 맥락을 정리하는 자동화 봇 프로젝트",
+        "thumbnailImageUrl": "https://example.com/images/posts/telegram-summarizer-bot.png",
+        "author": {
+          "username": "honggildong",
+          "displayName": "홍길동",
+          "profileImg": "https://example.com/images/profile-honggildong.png"
+        },
+        "publishedAt": "2026-03-24T09:00:00Z",
+        "viewCount": 412,
+        "reactionCount": 37,
+        "techStacks": [
+          "python",
+          "AWS(Lambda)",
+          "LLM(Google Gemini)"
+        ]
+      },
+      {
+        "postId": "postDebuggingNotesQueueLag",
+        "slug": "debugging-notes-queue-lag",
+        "projectId": "projectTelegramSummarizer",
+        "type": "devlog",
+        "title": "Queue Lag Debugging Notes",
+        "summary": "요약 작업 큐 지연을 줄이기 위해 병목 구간을 추적한 개발일지",
+        "thumbnailImageUrl": "https://example.com/images/posts/debugging-notes-queue-lag.png",
+        "author": {
+          "username": "honggildong",
+          "displayName": "홍길동",
+          "profileImg": "https://example.com/images/profile-honggildong.png"
+        },
+        "publishedAt": "2026-03-18T10:00:00Z",
+        "viewCount": 128,
+        "reactionCount": 9,
+        "techStacks": [
+          "python",
+          "Redis",
+          "AWS(SQS)"
+        ]
+      }
+    ],
+    "pageInfo": {
+      "nextCursor": "cursor_2",
+      "hasNext": true,
+      "totalCount": 42
+    }
+  }
+}
