@@ -43,4 +43,4 @@ PROFILE_PUBLIC_MOCK = {
 
 def get_profile_public(username: str) -> dict:
     # mock 단계라 username 검증 작업없이 그대로 반환해도 됨.
-    return ProfilePublicResponse
+    return PROFILE_PUBLIC_MOCK
